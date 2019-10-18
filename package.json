@@ -1,0 +1,52 @@
+{
+  "name": "cucumber-node-template",
+  "version": "1.0.0",
+  "description": "Demo / Template for Cucumber Tests. Demonstrates Cucumber-X framework containers",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf coverage build tmp",
+    "build": "tsc -p tsconfig.release.json",
+    "test": "mkdir -p  build/test-results && cucumber-js -p active"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qamatic/cucumber-node-template.git",
+    "lint": "tslint -t stylish --project \"tsconfig.json\""
+  },
+  "keywords": [
+    "cucumber",
+    "js",
+    "bdd",
+    "api testing",
+    "cypress testing",
+    "selenium testing"
+  ],
+  "author": "Senthil Maruthaiappan (senips @ gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qamatic/cucumber-node-template/issues"
+  },
+  "homepage": "https://github.com/qamatic/cucumber-node-template#readme",
+  "devDependencies": {
+    "@types/node": "^12.7.12",
+    "@types/cucumber": "^4.0.7",
+    "chai": "^4.2.0",
+    "chai-match": "^1.1.1",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.0.2",
+    "cucumber-pretty": "^1.5.2",
+    "cucumber-x": "^1.0.6",
+    "loadash": "^1.0.0",
+    "make-dir-cli": "^2.0.0",
+    "mocha": "^6.2.1",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.3.0",
+    "tslib": "^1.10.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "tsutils": "^3.17.1",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {}
+}
